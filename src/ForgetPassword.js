@@ -11,7 +11,7 @@ export function ForgetPassword() {
 
   const history = useHistory();
   const sendEmail = (email) => {
-    fetch("http://localhost:4000/forgotPassword", {
+    fetch("https://resetpasswordnamk.herokuapp.com/forgotPassword", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

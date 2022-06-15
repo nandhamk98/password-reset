@@ -12,7 +12,7 @@ export function SignIn() {
   let [incorrect, setIncorrect] = useState(null);
 
   const login = (data) => {
-    fetch("http://localhost:4000/login", {
+    fetch("https://resetpasswordnamk.herokuapp.com/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

@@ -31,7 +31,7 @@ export function SignUp() {
   };
 
   const signUp = (data) => {
-    fetch("http://localhost:4000/signup", {
+    fetch("https://resetpasswordnamk.herokuapp.com/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

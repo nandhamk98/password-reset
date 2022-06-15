@@ -16,7 +16,7 @@ export function ResetPassword() {
   let { token } = useParams();
 
   const updatePassword = (password) => {
-    fetch("http://localhost:4000/updatePassword", {
+    fetch("https://resetpasswordnamk.herokuapp.com/updatePassword", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(password),
